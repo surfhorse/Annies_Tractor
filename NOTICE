@@ -1,0 +1,9 @@
+afv (Animation From Video)
+Copyright 2026 Surfhorse Productions
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE), except for everything
+under blender/ (the Blender add-on and the scripts afv runs inside Blender), which is licensed under
+the GNU General Public License, version 3 or later (see blender/afv_addon/LICENSE).
+
+afv does not include any AI model. Its install scripts download third-party models and software from
+their publishers; each keeps its own licence. See THIRD_PARTY_LICENSES.md.

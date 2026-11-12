@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "afv"
+version = "0.1.0"
+description = "Animation From Video: fight footage to game-ready 3D animation"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Surfhorse Productions" }]
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+  "pydantic>=2.6",
+  "typer>=0.12",
+  "av>=12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+afv = "afv.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "blender: needs headless Blender (AFV_BLENDER or default install path)",
+  "gpu: needs a model environment and the GPU; holds ~/afv/.gpu.lock; opt-in with AFV_GPU_TESTS=1",
+  "slow: takes more than a few seconds",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "NPY", "RUF"]
+
+[tool.setuptools.package-data]
+afv = ["core/data/skeletons/*.json", "export/data/*.json"]
