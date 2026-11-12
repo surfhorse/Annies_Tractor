@@ -85,7 +85,6 @@ The add-on's reference is [blender/afv_addon/README.md](blender/afv_addon/README
 - Exporting onto your own character writes the motion only: no root-motion bone or engine-specific
   scale is added yet, and it has not been test-imported into a game engine.
 - This release contains the tool only. The author's tests and development notes are not included.
-- User may need to start new project in Blender after picking fighters and exporting the take.
 - When importing models onto animations, the user may need "retarget" prior to working. 
 
 ## Licences
