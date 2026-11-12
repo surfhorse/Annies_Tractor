@@ -1,0 +1,7 @@
+# tested 2026-11-09 (written by install/install_track.sh)
+sam2 commit: 2b90b9f5ceec907a1c18123530e92e794ad901a4
+rfdetr: 1.12.0
+torch: 2.11.0+cu128
+sha256:
+2647878d5dfa5098f2f8649825738a9345572bae2d4350a2468587ece47dd318  weights/sam2.1_hiera_large.pt
+749ff6071828aaffac63e204c4f4135ed3d6cdae4d702e086c360edc3b5768c8  ~/.roboflow/models/rf-detr-medium.pth

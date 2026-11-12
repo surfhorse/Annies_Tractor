@@ -1,0 +1,7 @@
+# Scripts run inside WSL/Linux: keep LF endings regardless of core.autocrlf
+*.sh text eol=lf
+*.py text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.pdf binary
+*.npz binary
